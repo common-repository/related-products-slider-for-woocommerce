@@ -1,0 +1,368 @@
+/**
+ * Common Style
+ */
+
+body {
+    -webkit-backface-visibility: hidden;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.rp_related_products_area * {
+    -webkit-backface-visibility: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.rp_related_products figure, .rp_related_products figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+.rp_related_products_area {
+    position: relative;
+    clear: both;
+}
+
+.rp_related_products .rp_cart_btn a.button {
+    -webkit-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.rp_related_products_area_title {
+    margin-bottom: 15px;
+    margin-left: 4px;
+}
+
+.rp_related_products .rp-item {
+    margin: 0 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rp_title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+.rp_title a, .rp_title a:hover {
+    text-decoration: none;
+}
+
+.rp_related_products_area img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-shadow: inherit;
+    border-radius: 0;
+}
+
+.rp_onsale {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    line-height: 20px;
+    width: 110px;
+    min-height: inherit;
+    min-width: inherit;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #77a464;
+    border-radius: 0;
+    z-index: 99;
+    -webkit-transition: background-color 400ms;
+    -o-transition: background-color 400ms;
+    transition: background-color 400ms;
+    -webkit-font-smoothing: antialiased;
+}
+
+.rp_onsale.rp_ribbon_top_right {
+    right: -32px;
+    left: inherit;
+    top: 15px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rp_onsale.rp_ribbon_top_left {
+    left: -32px;
+    top: 15px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.rp_price ins {
+    background: transparent;
+}
+
+.rp_price {
+    margin-bottom: 7px;
+}
+
+.rp_related_products .rp_cart_btn a.button, .rp_related_products .rp_cart_btn a.added_to_cart {
+    border: 1px solid;
+    border-radius: 0;
+    padding: 8px 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.rp_related_products_area .owl-theme .owl-controls .owl-buttons div {
+    background: transparent!important;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 2px 8.5px;
+    margin: 0 2px;
+    opacity: 1;
+    -webkit-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    color: #000;
+}
+
+.rp_related_products_area .owl-theme .owl-controls .owl-buttons i {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 20px;
+    -webkit-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+}
+
+.rp_related_products .rp_cart_btn a.button.added {
+    display: none;
+}
+
+.rp_cart_btn a {
+    text-decoration: none;
+}
+
+
+/**
+ * Theme Hover
+ */
+
+.rp_related_products.rp_theme_hover figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.rp_related_products.rp_theme_hover figcaption {
+    position: absolute;
+    padding-top: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.rp_related_products.rp_theme_hover figure:hover figcaption {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+
+/*  from bottom  effect begin*/
+
+.rp_related_products.rp_hover_theme_bottom figcaption {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.rp_related_products.rp_hover_theme_bottom figure:hover figcaption {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/*  from bottom  effect end*/
+
+
+/*  from top  effect begin*/
+
+.rp_related_products.rp_hover_theme_top figcaption {
+    left: 0;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.rp_related_products.rp_hover_theme_top figure:hover figcaption {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+/*  from top  effect end*/
+
+
+/*  from left  effect begin*/
+
+.rp_related_products.rp_hover_theme_left figcaption {
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.rp_related_products.rp_hover_theme_left figure:hover figcaption {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+/*  from left  effect end*/
+
+
+/*  from left  effect begin*/
+
+.rp_related_products.rp_hover_theme_right figcaption {
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.rp_related_products.rp_hover_theme_right figure:hover figcaption {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+/*  from left  effect end*/
+
+.rp_related_products.rp_theme_hover .rp_title a, .rp_related_products.rp_theme_hover .rp_title a:hover, .rp_related_products.rp_theme_hover .rp_price, .rp_related_products.rp_theme_hover .rp_price del {
+    color: #ffffff;
+}
+
+.rp_related_products.rp_theme_hover .rp_cart_btn {}
+
+.rp_related_products.rp_theme_hover .rp_cart_btn a.button, .rp_related_products.rp_theme_hover .rp_cart_btn a.added_to_cart {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.rp_related_products.rp_theme_hover .rp_cart_btn a.button:hover, .rp_related_products.rp_theme_hover .rp_cart_btn a.added_to_cart:hover {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/**
+ * Basic style
+ */
+
+.rp_related_products.rp_theme_basic .rp-item {
+    background: rgba(238, 238, 238, 0.22);
+}
+
+.rp_related_products.rp_theme_basic figure {
+    display: block;
+    padding: 8px;
+}
+
+.rp_related_products.rp_theme_basic figcaption {
+    text-align: center;
+}
+
+.rp_related_products.rp_theme_basic .rp_title {
+    margin: 10px 0;
+}
+
+.rp_related_products.rp_theme_basic .rp_title a {
+    color: #666;
+}
+
+.rp_related_products.rp_theme_basic .rp_cart_btn a.button, .rp_related_products.rp_theme_basic .rp_cart_btn a.added_to_cart {
+    background: #96C03D;
+    color: #fff;
+}
+
+.rp_related_products.rp_theme_basic .rp_cart_btn a.button:hover, .rp_related_products.rp_theme_basic .rp_cart_btn a.added_to_cart:hover {
+    background: #ffffff;
+    color: #96C03D;
+}
+
+
+/*for shwo page numbers */
+
+.rp_related_products_area .owl-theme .owl-controls .owl-page span {
+    background-color: #888;
+}
+
+
+/*for navigation position*/
+
+.rp_related_products_area .owl-buttons {
+    position: absolute;
+}
+
+.rp_related_products_area.nav_top_right .owl-buttons {
+    top: -40px;
+    right: 2px;
+}
+
+.rp_related_products_area.nav_bottom_left .owl-buttons {
+    bottom: 2px;
+    left: 0;
+}
+
+.rp_related_products_area.nav_bottom_center .owl-buttons {
+    position: unset;
+}
+
+.rp_related_products_area.nav_bottom_right .owl-buttons {
+    bottom: 2px;
+    right: 2px;
+}
